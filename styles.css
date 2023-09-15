@@ -1,0 +1,32 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+}
+
+img {
+    width: 50%;
+    height: 350px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(16, 246, 0);
+    background-color: black;
+}
