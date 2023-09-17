@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: beige;
     text-align: left;
-    display: block;
 }
 
 h1 {
@@ -19,12 +22,13 @@ h2 {
 h3 {
     font-size: 22px;
     text-align: left;
-    padding-top: 10px;
 }
 
 img {
     width: auto;
     height: 300px;
+    float: left;
+    margin-right: 10px;
 }
 
 a {
@@ -46,9 +50,84 @@ p {
 ul {
     list-style-type: none;
     text-align: left;
+    
 }
 
 ol {
     text-align: left;
-    
+}
+
+.section-header {
+    clear: both;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: -15px;
+}
+
+.container.fudge {
+    flex-wrap: nowrap;
+}
+
+.container.fudge > ul {
+    list-style-type: square;
+    padding-left: 15px;
+}
+
+.container.fudge > ul > ul {
+    padding-left: 20px;
+    list-style-type: upper-roman;
+}
+
+.container.fudge > ol {
+    flex-basis: 450px;
+}
+
+.container.fudge span {
+    font-weight: bold;
+    list-style-type: disc;
+}
+
+.container > li {
+    padding-left: 0px;
+}
+
+.headings {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.headings > #steps {
+    text-align: left;
+    width: 150px;
+}
+
+.container.fudge.gallo {
+    justify-content: space-around;
+}
+
+.container.fudge.gallo > ul, #pico-steps {
+    flex-basis: 200px;
+}
+
+.headings.gallo {
+    justify-content: space-around;
+}
+
+.headings.gallo > #steps {
+    text-align: left;
+    width: 150px;
+}
+
+#sloppy-ingredient-header {
+    clear: both;
+    padding-top: 10px;
 }
